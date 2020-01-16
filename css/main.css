@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../two-man-hiking-on-snow-mountain-869258.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+.wrapper::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(78, 169, 255);
+  opacity: 0.7;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  border: 5px solid white;
+  padding: 20px;
+  box-shadow: 0px 0px 58px -10px rgba(27, 27, 27, 0.75);
+}
+.text {
+  font-size: 4.7rem;
+}
+.secondText {
+  text-align: center;
+  font-size: 2.1rem;
+}
+.imgContainer img {
+  width: 90% !important;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+}
+.content:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.hidden {
+  opacity: 0;
+  position: relative;
+  transform: translateY(-30px);
+  transition: ease-in-out 0.5s;
+}
+.textContentReplace {
+  opacity: 1;
+  transform: translateY(0);
+}
+.footerContainer {
+  width: 100vw;
+  height: 10vw;
+  margin-top: 40px;
+  background-color: #7bbbf8;
+  background-image: url("../two-man-hiking-on-snow-mountain-869258.jpg");
+  background-position: 40% 40%;
+  background-attachment: fiexed;
+  text-align: center;
+  position: relative;
+}
+.footerContainer::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(78, 169, 255);
+  opacity: 0.7;
+}
+.infoText {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 0px 1px 7px rgba(0, 0, 0, 0.56);
+}
+.infoText a {
+  text-decoration: none;
+  color: white;
+}
